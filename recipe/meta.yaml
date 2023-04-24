@@ -29,16 +29,16 @@ requirements:
     - croniter <1.4.0,>=1.3.0
     - dateutils <2.0
     - deepdiff <8.0,>=5.7.0
-    - fastapi <0.89.0
+    - fastapi <0.89.0,>=0.69.0
     - fsspec <2024.0,>=2022.5.0
     - inquirer <5.0,>=2.10.0
     - jinja2 <5.0
-    - lightning-cloud >=0.5.31
+    - lightning-cloud >=0.5.34
     - lightning-utilities <2.0,>=0.7.0
     - numpy <3.0,>=1.17.2
     - packaging
     - psutil <7.0
-    - pydantic <3.0
+    - pydantic <4.0,>=1.7.4
     - python >=3.8
     - python-multipart
     - pytorch <4.0,>=1.11.0
@@ -46,7 +46,7 @@ requirements:
     - pyyaml <8.0
     - requests <4.0
     - rich <15.0,>=12.3.0
-    - starlette <2.0
+    - starlette
     - starsessions <2.0,>=1.2.1
     - torchmetrics <2.0,>=0.7.0
     - tqdm <6.0,>=4.57.0
