@@ -1,5 +1,5 @@
 {% set name = "lightning" %}
-{% set version = "2.0.7" %}
+{% set version = "1.8.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lightning-{{ version }}.tar.gz
-  sha256: f05acd4ba846505d40125b4f9f0bda0804b2b0356e2ad2fd4e4bf7d1c61c8cc6
+  sha256: 4f56a390e58551cf40173c8c74684972c261185f3a92690888340b7209855f49
 
 build:
   entry_points:
@@ -23,40 +23,22 @@ requirements:
     - setuptools
     - wheel
   run:
-    - arrow <3.0,>=1.2.0
-    - backoff <4.0,>=2.2.1
-    - beautifulsoup4 <6.0,>=4.8.0
-    - click <10.0
-    - croniter <1.5.0,>=1.3.0
-    - dateutils <2.0
-    - deepdiff <8.0,>=5.7.0
-    - fastapi <2.0,>=0.92.0
-    - fsspec <2025.0,>=2022.5.0
-    - inquirer <5.0,>=2.10.0
-    - jinja2 <5.0
-    - lightning-cloud >=0.5.37
-    - lightning-utilities <2.0,>=0.7.0
-    - numpy <3.0,>=1.17.2
+    - arrow <1.2.4,>=1.2.0
+    - beautifulsoup4 <4.11.2,>=4.8.0
+    - click <=8.1.3
+    - croniter <1.4.0,>=1.3.0
+    - deepdiff <6.2.3,>=5.7.0
+    - fsspec <2022.7.1,>=2022.5.0
+    - inquirer >=2.10.0
+    - lightning-cloud >=0.5.12
+    - lightning-utilities <0.5.0,>=0.3.0,!=0.4.0
     - packaging
-    - psutil <7.0
-    - pydantic <2.2.0,>=1.7.4
-    - python >=3.8
-    - python-multipart <2.0,>=0.0.5
-    - pytorch <4.0,>=1.11.0
+    - psutil <5.9.4
+    - python >=3.7
     - pytorch-lightning
-    - pyyaml <8.0
-    - requests <4.0
-    - rich <15.0,>=12.3.0
-    - starlette
     - starsessions <2.0,>=1.2.1
-    - torchmetrics <2.0,>=0.7.0
-    - tqdm <6.0,>=4.57.0
-    - traitlets <7.0,>=5.3.0
-    - typing-extensions <6.0,>=4.0.0
-    - urllib3 <4.0
-    - uvicorn <2.0
-    - websocket-client <3.0
-    - websockets <13.0
+    - traitlets <=5.4.0,>=5.3.0
+    - typing-extensions <=4.4.0,>=4.0.0
 
 test:
   imports:
