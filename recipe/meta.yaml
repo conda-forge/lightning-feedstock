@@ -1,5 +1,5 @@
 {% set name = "lightning" %}
-{% set version = "2.0.8" %}
+{% set version = "2.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lightning-{{ version }}.tar.gz
-  sha256: db914e211b5c3b079a821be6e4344e72d0a729163676a65c4e00aae98390ae7b
+  sha256: 2395ece6e29e12064718ff16b8edec5685df7f7095d4fee78edb0a654f5cd7eb
 
 build:
   entry_points:
@@ -34,7 +34,7 @@ requirements:
     - fsspec <2025.0,>=2022.5.0
     - inquirer <5.0,>=2.10.0
     - jinja2 <5.0
-    - lightning-cloud >=0.5.37
+    - lightning-cloud >=0.5.38
     - lightning-utilities <2.0,>=0.7.0
     - numpy <3.0,>=1.17.2
     - packaging
@@ -49,7 +49,7 @@ requirements:
     - rich <15.0,>=12.3.0
     - starlette
     - starsessions <2.0,>=1.2.1
-    - torchmetrics <2.0,>=0.7.0
+    - torchmetrics <3.0,>=0.7.0
     - tqdm <6.0,>=4.57.0
     - traitlets <7.0,>=5.3.0
     - typing-extensions <6.0,>=4.0.0
