@@ -1,5 +1,5 @@
 {% set name = "lightning" %}
-{% set version = "2.0.9.post0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lightning-{{ version }}.tar.gz
-  sha256: 93687b65bff28cedfc13c758bdfed982849c34f9bb506937c63275a9647586a0
+  sha256: 1f78f5995ae7dcffa1edf34320db136902b73a0d1b304404c48ec8be165b3a93
 
 build:
   entry_points:
@@ -31,20 +31,20 @@ requirements:
     - dateutils <2.0
     - deepdiff <8.0,>=5.7.0
     - fastapi <2.0,>=0.92.0
-    - fsspec <2025.0,>=2022.5.0
+    - fsspec <2025.0,>2021.06.0
     - inquirer <5.0,>=2.10.0
     - jinja2 <5.0
     - lightning-cloud >=0.5.38
-    - lightning-utilities <2.0,>=0.7.0
+    - lightning-utilities <2.0,>=0.8.0
     - numpy <3.0,>=1.17.2
-    - packaging
+    - packaging <25.0,>=20.0
     - psutil <7.0
     - pydantic <2.2.0,>=1.7.4
     - python >=3.8
     - python-multipart <2.0,>=0.0.5
-    - pytorch <4.0,>=1.11.0
+    - pytorch <4.0,>=1.12.0
     - pytorch-lightning
-    - pyyaml <8.0
+    - pyyaml <8.0,>=5.4
     - requests <4.0
     - rich <15.0,>=12.3.0
     - starlette
