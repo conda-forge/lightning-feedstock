@@ -1,5 +1,5 @@
 {% set name = "lightning" %}
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lightning-{{ version }}.tar.gz
-  sha256: 865491940d20a9754eac7494aa18cab893e0c2b31e83743349eeeaf31dfb52db
+  sha256: 3b2599a8a719916cb03526e6570356809729680c6cda09391232e2aba0a4ed4b
 
 build:
   entry_points:
@@ -66,7 +66,6 @@ test:
     - LIGHTING_TESTING=1 lightning --help
   requires:
     - pip
-    - python >=3.7, <3.11 # TODO: this upper bound is because of PyTorch issue with dataclass
 
 about:
   home: https://github.com/Lightning-AI/lightning
