@@ -66,7 +66,6 @@ test:
     - LIGHTING_TESTING=1 lightning --help
   requires:
     - pip
-    - python >=3.7, <3.11 # TODO: this upper bound is because of PyTorch issue with dataclass
 
 about:
   home: https://github.com/Lightning-AI/lightning
