@@ -10,11 +10,9 @@ source:
   sha256: 70867a59e6b67e7720958ceb14476a2a00f34c12ad03680faed3163ed70138e2
 
 build:
-  entry_points:
-    - lightning = lightning.app.cli.lightning_cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -40,7 +38,6 @@ test:
     - lightning
   commands:
     - pip check
-    - LIGHTING_TESTING=1 lightning --help
   requires:
     - pip
 
