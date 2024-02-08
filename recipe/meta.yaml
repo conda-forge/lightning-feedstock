@@ -1,5 +1,5 @@
 {% set name = "lightning" %}
-{% set version = "2.1.4" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lightning-{{ version }}.tar.gz
-  sha256: 0e45098c700fa28c604a11ae233ce181b44aeffce2404debebc2616118431d9f
+  sha256: acf47bebc924f443f90a860b84a3f5566933a930adde42e3021abb5cf466c45f
 
 build:
   noarch: python
@@ -26,12 +26,12 @@ requirements:
     - numpy <3.0,>=1.17.2
     - packaging <25.0,>=20.0
     - python >=3.8
-    - pytorch <4.0,>=1.12.0
+    - pytorch <4.0,>=1.13.0
     - pytorch-lightning
     - pyyaml <8.0,>=5.4
     - torchmetrics <3.0,>=0.7.0
     - tqdm <6.0,>=4.57.0
-    - typing-extensions <6.0,>=4.0.0
+    - typing-extensions <6.0,>=4.4.0
 
 test:
   imports:
