@@ -1,5 +1,5 @@
 {% set name = "lightning" %}
-{% set version = "2.2.1" %}
+{% set version = "2.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lightning-{{ version }}.tar.gz
-  sha256: b3e46d596b32cafd1fb9b21fdba1b1767df97b1af5cc702693d1c51df60b19aa
+  sha256: 799e933bf51f3f10516b3f1acf3650e4bc063682eb5b5dc9dcbd1ebd38e03e3a
 
 build:
   noarch: python
