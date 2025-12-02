@@ -3,11 +3,11 @@ About lightning-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lightning-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/Lightning-AI/lightning
+Home: https://github.com/Lightning-AI/pytorch-lightning
 
 Package license: Apache-2.0
 
-Summary: Use Lightning Apps to build everything from production-ready, multi-cloud ML systems to simple research demos.
+Summary: The Deep Learning framework to train, deploy, and ship AI products Lightning fast.
 
 Current build status
 ====================
