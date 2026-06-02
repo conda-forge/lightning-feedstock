@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: lightning
-  version: 2.6.1
+  version: "2.6.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/lightning-${{ version }}.tar.gz
-  sha256: 859104b98c61add6fe60d0c623abf749baf25f2950a66ebdfb4bd18aa7decba9
+  sha256: 16a30310ed69afde3748491feb5d13508908effd70390d2bfc203dc0812a4b4a
 
 build:
   number: 0
