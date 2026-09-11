@@ -16,6 +16,9 @@ build:
   number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
+  python:
+    entry_points:
+      - fabric = lightning.fabric.cli:_main
 
 requirements:
   host:
@@ -43,6 +46,14 @@ tests:
       python_version:
         - ${{ python_min }}.*
         - "*"
+  - requirements:
+      run:
+        - click
+        - python ${{ python_min }}.*
+    script:
+      - fabric --help
+      - fabric run --help
+      - fabric consolidate --help
 
 about:
   homepage: https://github.com/Lightning-AI/pytorch-lightning
